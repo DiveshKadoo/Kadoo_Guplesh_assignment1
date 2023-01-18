@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/speaker-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Styling for sub nav of page */
+.sub-link {
+    text-align: center;
+    margin-top: 40px;
+    position: inherit;
+}
+
+.sub-link .sub-link__item {
+    padding: 10px 50px 10px 50px;
+    border: 2px solid var(--colour-grey-dark);
+    background-color: var(--colour-primary);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: all .35s;
+    position: relative;
+    transition: all .35s;
+    color: var(--colour-grey-dark);
+}
+
+.sub-link .sub-link__item span {
+    position: relative;
+    z-index: 2;
+}
+
+.sub-link .sub-link__item:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--colour-grey-light-1);
+    transition: all .35s;
+}
+
+.sub-link .sub-link__item:hover {
+    color: white;
+}
+
+.sub-link .sub-link__item:hover:after {
+    width: 100%;
+}
+
+
+/* Styling for the list of committee */
+.committee-title1, .committee-title2 {
+    text-align: center;
+}
+
+.committee-main {
+    background-color: whitesmoke;
+    width: 95%;
+    max-width: 1220px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.committee-member {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    position: initial;
+}
+
+.committee-member__title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0;
+    position: initial;
+    text-align: center;
+}
+
+.committee-member__content {
+    border-top: 2px solid var(--colour-grey-dark);
+    display: grid;
+    padding: 15px 0;
+    font-size: 1.2rem;
+}
+
+.committee-member__content .committee-full__list {
+    line-height: 26px;
+}
+
+.committee-list{
+    list-style-type: none;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+
+    .committee-member__content,
+    .committee-member__title {
+        font-size: 1rem;
+    }
+
+    .committee-title1, .committee-title2 {
+        font-size: 1.6rem;
+    }
+}

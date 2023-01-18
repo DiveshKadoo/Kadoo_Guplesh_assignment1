@@ -1,0 +1,196 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Page first section (Call for papers news box) */
+.section-title {
+    background-image: url(../img/callforpapers-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+}
+
+.call-for-papers-summary {
+    background-color: var(--colour-primary);
+    padding: 60px;
+    width: 400px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.call-for-papers__title {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.the-deadline {
+    background-color: transparent;
+    border-radius: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid white;
+    color: white;
+    padding: 1rem;
+}
+
+.call-for-papers-summary .deadline button:hover {
+    background-color: white;
+    color: var(--colour-grey-dark);
+}
+
+/* Grid styling */
+.flex-container {
+    background-image: url(../img/speaker-bg.jpg);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
+
+.flex-item-left {
+    padding: 90px 190px 0px 190px;
+    flex: 70%;
+}
+
+.flex-item-right {
+    padding: 90px 30px 30px 30px;
+    flex: 30%;
+}
+
+/* Call for paper main information section */
+.drescription__title {
+    font-size: 30px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.drescription {
+    border-bottom: 1px solid var(--colour-grey-light-2);
+    padding-bottom: 35px;
+}
+
+.drescription__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--color-grey-dark);
+    border-left: 3px solid var(--colour-grey-light-2);
+    letter-spacing: 0.6rem;
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+.drescription__paragraph {
+    text-align: justify;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.drescription__conclusion {
+    text-align: justify;
+    font-size: 16px;
+    margin-top: 15px;
+    border-left: 3px solid var(--colour-grey-light-2);
+    background-color: whitesmoke;
+    padding: 8px;
+}
+
+.topic-list {
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right-list-item {
+    justify-content: left;
+    flex: 0 0 50%;
+    display: flex;
+    margin-bottom: 4px;
+}
+
+.right-list-item i {
+    padding: 4px;
+}
+
+.right-list-item::before {
+    color: var(--colour-primary);
+    width: 2rem;
+    height: 2rem;
+}
+
+.review-process {
+    margin: 5px;
+    padding: 40px;
+    border: 1.5px solid var(--colour-primary);
+}
+
+.review-process__title {
+    color: var(--colour-grey-dark-dark);
+    padding: 1px;
+}
+
+/* Styling for the information box */
+.review-process__text {
+    text-align: justify;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.review-process__link {
+    text-decoration: none;
+    color: var(--colour-primary-dark-2)
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .call-for-papers-summary {
+        max-width: fit-content;
+        flex-direction: column;
+    }
+
+    .flex-container {
+        padding: 3px;
+        flex-direction: column;
+    }
+
+    .review-process {
+        padding: 12px;
+    }
+
+    .flex-item-right {
+        padding: 20px;
+    }
+
+    .flex-item-left{
+        padding: 20px !important;
+    }
+
+    .right-list-item {
+        flex: 0 0 100%;
+    }
+
+    .drescription__title,
+    .review-process__title {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 912px) {
+    .call-for-papers-summary {
+        max-width: fit-content;
+        flex-direction: column;
+    }
+    .flex-container {
+        padding: 3px;
+        flex-direction: column;
+    }
+    .flex-item-left{
+        padding: 90px 80px 0px 80px;
+    }
+}
