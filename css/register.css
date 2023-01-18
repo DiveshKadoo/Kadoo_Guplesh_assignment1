@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body{
+    background-image:url("/img/speaker-bg.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: inherit;
+  }
+
+  /* Registration page main title styling */
+  .registeration__heading {
+    display: flex;
+    justify-content: center;
+    font-family: inherit;
+    padding: 2%;
+  }
+  
+  .registeration-wording {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    letter-spacing: 0.1em;
+  }
+
+  /* Styling for main section for the register page */
+  .register-main{
+    margin: 0px 35px 0px 35px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .register-left{
+    flex: 40%;
+    background-color: whitesmoke;
+  }
+
+  .register-right{
+    flex: 60%;
+    background-color: rgb(219, 219, 219);
+    padding-left:m50px;
+
+  }
+
+  .register-description{
+    padding: 20px;
+  }
+
+  .description__title1{
+    font-size: 24px;
+    border-left: 3px solid var(--colour-grey-dark);
+    padding-left: 10px;
+  }
+  .description__title2{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.664);
+    padding-left: 13px;
+  }
+
+  .description__text{
+    padding: 10px 0px 0px 13px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.description__link{
+    text-decoration: none;
+    color: var(--colour-primary-dark-2);
+}
+
+.description__list{
+    font-size: 14px;
+    padding: 10px 0px 0px 40px;
+}
+
+/* form section styling */
+.form-tile{
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--colour-primary-dark-2);
+    padding-left: 13px;
+    border-left: 3px solid var(--colour-grey-dark);
+    margin-left: 15px;
+  }
+
+  .form__input-box{
+    padding: 20px;
+    height: 90px;
+    width: 100%;
+  }
+  .form__input-field{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: whitesmoke;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+  }
+  
+  .form__button{
+    margin: 20px;
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .form .form__button input[type="button"]{
+    color: var(--colour-grey-dark);
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: var(--colour-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button input[type="button"]:hover{
+    background: var(--colour-primary-light);
+  }
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 912px) {
+    .register-main {
+      flex-direction: column;
+      margin: 0;
+    }
+    .registeration__heading{
+        text-align: center;
+    }
+  }
