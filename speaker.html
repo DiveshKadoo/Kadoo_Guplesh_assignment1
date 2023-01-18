@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Icon used in page link -->
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+  <!-- Css link -->
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/speaker.css">
+
+  <title>Speaker</title>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+
+    <div class="header-item__left">
+      <a href="#"><img class="" src="img/logo-icacie.png" alt="ICACIE"></a>
+    </div>
+
+    <div class="header-item__middle">
+      <div class="header-item__content">
+        <h4 class=""><b>21<sup>th</sup> INTERNATIONAL CONFERENCE ON<br>AND 11th ORGANISATIONAL GOVERNANCE CONFERENCE
+            (OGC)
+            Social Responsibility in a Changing Era<br>[ICACIE 2023]</b></h4>
+        <h5><b>July/August, 2023</b></h5>
+      </div>
+    </div>
+
+    <div class="header-item__right">
+      <a href="https://udm.ac.mu"><img class="" src="img/udm-logo-2.png" alt="UdM Logo"></a>
+    </div>
+
+  </div>
+
+  <!-- Navigation Bar -->
+  <div class="main-nav" id="navbar">
+    <a href="index.html" class="nav__link">HOME</a>
+    <a href="callforpapers.html" class="nav__link">CALL FOR PAPERS</a>
+    <a href="register.html" class="nav__link">REGISTRATION</a>
+    <a href="gallery.html" class="nav__link">GALLERY</a>
+    <a href="committee.html" class="nav__link">COMMITTEE</a>
+    <a href="speaker.html" class="nav__link">SPEAKERS</a>
+    <a href="venue.html" class="nav__link">VENUE</a>
+    <a href="contactus.html" class="nav__link">CONTACT</a>
+    <a href="signin.html" class="nav__link">SIGN IN</a>
+    <a href="javascript:void(0);" class="nav__icon" onclick="openNav()">
+      <i class="fa fa-navicon"></i>
+    </a>
+  </div>
+
+  <!-- The photo grid (content) -->
+  <p class="container-toptext">Inspiring minds at the conference</p>
+  <div class="flex-container">
+    <div class="flex-item-left">
+      <div class="card">
+        <img class="card-image" src="img/profile1.jpg" alt="profile1">
+        <h3>John Doe</h3>
+        <p class="title">Conference Chairperson</p>
+        <div class="card-icon">
+          <a href="#"><i class="card__link fa fa-twitter"></i></a>
+          <a href="#"><i class="card__link fa fa-linkedin"></i></a>
+          <a href="#"><i class="card__link fa fa-facebook"></i></a>
+        </div>
+        <p><button class="card-button">Bio</button></p>
+      </div>
+    </div>
+
+    <div class="flex-item-middle">
+      <div class="card">
+        <img class="card-image" src="img/profile2.jpg" alt="profile2">
+        <h3>Sarah Smith</h3>
+        <p class="title">CEO & Founder</p>
+        <div class="card-icon">
+          <a href="#"><i class="card__link fa fa-twitter"></i></a>
+          <a href="#"><i class="card__link fa fa-linkedin"></i></a>
+          <a href="#"><i class="card__link fa fa-facebook"></i></a>
+        </div>
+        <p><button class="card-button">Bio</button></p>
+      </div>
+    </div>
+
+    <div class="flex-item-right">
+      <div class="card">
+        <img class="card-image" src="img/profile3.jpg" alt="profile3">
+        <h3>Paul William</h3>
+        <p class="title">Associate Professor</p>
+        <div class="card-icon">
+          <a href="#"><i class="card__link fa fa-twitter"></i></a>
+          <a href="#"><i class="card__link fa fa-linkedin"></i></a>
+          <a href="#"><i class="card__link fa fa-facebook"></i></a>
+        </div>
+        <p><button class="card-button">Bio</button></p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer-main">
+    <footer>
+      <div class="footer-icon">
+        <a class="footer-icon__link" href="#"><i class="ion-social-instagram"></i>
+        </a>
+        <a class="footer-icon__link" href="#"><i class="ion-social-twitter"></i>
+        </a>
+        <a class="footer-icon__link" href="#"><i class="ion-social-facebook"></i>
+        </a>
+      </div>
+      <p class="footer-text">Copyright © 2023 – All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Javascript code for the navigation bar to stick at the top -->
+  <script>
+    window.onscroll = function () { navBarFixed() };
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function navBarFixed() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+  <!-- Javascript code for the nav bar collaspe for mobile format -->
+  <script>
+    function openNav() {
+      var x = document.getElementById("navbar");
+      if (x.className === "main-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "main-nav";
+      }
+    }
+  </script>
+
+</body>
+</html>
