@@ -2,99 +2,190 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/main.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!--Icon used in page link -->
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+  <!-- Css link -->
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>ICACIE</title>
-</head>
 
+</head>
 <body>
+
   <!-- Header -->
   <div class="header">
-    <div class="hearder-row">
 
-      <div class="header-item__side">
-        <a href="#"><img class="header__image"
-            src="https://icacie.com/2022/wp-content/themes/icacie/images/logo/logo-icacie.png" alt="ICACIE"></a>
-      </div>
-
-      <div class="header-item__middle">
-        <div class="">
-          <h4 class=""><b>7<sup>th</sup> International Conference on<br>Advanced Computing and
-              Intelligent Engineering<br>[ICACIE 2022]</b></h4>
-          <h5 class="" >DRIEMS (Autonomous)
-            Engineering College</h5>
-          <h6 class="text-secondary" >[‘A’ Grade by NAAC (under UGC), AICTE Approved,
-            NBA Accredited, BPUT Affiliated]</h6>
-          <h6 class="" >Cuttack, Odisha, India</h6>
-          <a class=""  href="https://www.driems.ac.in/"
-            target="_blank">www.driems.ac.in</a>
-          <h5><b>23-24 December, 2022</b></h5>
-        </div>
-      </div>
-
-      <div class="header-item__side">
-        <a href="https://www.driems.ac.in/" target="_blank"><img class="header-item-image" src="https://icacie.com/2022/wp-content/uploads/2022/06/Logo-e1654337161604.png" alt="DRIEMS"></a>
-      </div>
-
+    <div class="header-item__left">
+      <a href="#"><img class="" src="img/logo-icacie.png" alt="ICACIE"></a>
     </div>
+
+    <div class="header-item__middle">
+      <div class="header-item__content">
+        <h4 class=""><b>21<sup>th</sup> INTERNATIONAL CONFERENCE ON<br>AND 11th ORGANISATIONAL GOVERNANCE CONFERENCE
+            (OGC)
+            Social Responsibility in a Changing Era<br>[ICACIE 2023]</b></h4>
+        <h5><b>July/August, 2023</b></h5>
+      </div>
+    </div>
+
+    <div class="header-item__right">
+      <a href="https://udm.ac.mu"><img class="" src="img/udm-logo-2.png" alt="UdM Logo"></a>
+    </div>
+
   </div>
 
   <!-- Navigation Bar -->
-  <div class="main-nav">
-    <a href="#" class="main-nav__link">Linked</a>
-    <a href="#" class="main-nav__link">Linked</a>
-    <a href="#" class="main-nav__link">Linked</a>
-    <a href="#" class="main-nav__link">Linked</a>
+  <div class="main-nav" id="navbar">
+    <a href="index.html" class="nav__link">HOME</a>
+    <a href="callforpapers.html" class="nav__link">CALL FOR PAPERS</a>
+    <a href="register.html" class="nav__link">REGISTRATION</a>
+    <a href="gallery.html" class="nav__link">GALLERY</a>
+    <a href="committee.html" class="nav__link">COMMITTEE</a>
+    <a href="speaker.html" class="nav__link">SPEAKERS</a>
+    <a href="venue.html" class="nav__link">VENUE</a>
+    <a href="contactus.html" class="nav__link">CONTACT</a>
+    <a href="signin.html" class="nav__link">SIGN IN</a>
+    <a href="javascript:void(0);" class="nav__icon" onclick="openNav()">
+      <i class="fa fa-navicon"></i>
+    </a>
   </div>
 
   <!-- The flexible grid (content) -->
   <div class="row">
+
+    <!-- News box section -->
     <div class="side">
-      <h2>About Me</h2>
-      <h5>Photo of me:</h5>
-      <div class="fakeimg" style="height: 200px">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>More Text</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <div class="fakeimg" style="height: 60px">Image</div>
-      <br />
-      <div class="fakeimg" style="height: 60px">Image</div>
-      <br />
-      <div class="fakeimg" style="height: 60px">Image</div>
+      <div class="newsbox">
+        <h2>IMPORTANT DATES</h2>
+        <ul>
+          <li>Abstract or full paper submission: 30 January 2023</li>
+          <li> Final paper submission: 30 January 2023</li>
+
+        </ul>
+      </div>
+      <div class="newsbox">
+        <h2>LASTEST NEWS</h2>
+        <ul>
+          <li>Payment deadline extended to 30 January 2023!</li>
+        </ul>
+      </div>
+
+      <!-- Sponsor section -->
+      <div class="sponsor">
+        <h3 class="sponsor-title">OUR SPONSORS</h3>
+        <div class="sponsor-img1"></div>
+        <br>
+        <div class="sponsor-img2"></div>
+        <br>
+        <div class="sponsor-img3"></div>
+      </div>
+
     </div>
+
     <div class="main">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height: 200px">Image</div>
-      <p>Some text..</p>
-      <p>
-        Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco.
-      </p>
-      <br />
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height: 200px">Image</div>
-      <p>Some text..</p>
-      <p>
-        Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco.
-      </p>
+
+      <!-- About me section -->
+      <div class="aboutme">
+        <h1 class="aboutme-title">Welcome to the ICACIE Conference</h1>
+        <div class="aboutme-img"></div>
+        <p class="aboutme-paragraph">This conference is organized jointly by the Université des Mascareignes, a public
+          university in the idyllic island of Mauritius, and the Social Responsibility Research Network. After the
+          disruptions of the past couple of years we are looking forward to this event and to meeting you in Mauritius.
+        </p>
+        <p class="aboutme-paragraph">This conference will mark the 20th anniversary of the first ever CSR conference
+          which was held in London and organised by Prof. David Crowther.</p>
+        <p class="aboutme-paragraph">CSR was first defined as a concept whereby companies would decide voluntarily to
+          contribute to a better society and cleaner environment (European Commission, 2001). Nowadays, CSR has become a
+          priority issue on governments’ agendas. The phenomenon of investigation in CSR no longer has an exclusive
+          focus on private owned companies. Global trends have forced both private and public actors to reshape their
+          frameworks, rules, and business models.</p>
+        <p class="aboutme-paragraph">Some benefits of a public sector CSR include their ability to help inspire new
+          strategies to address gaps in public sector capacity and to promote synergies between the complementary skills
+          of public, private and civil society actors to achieve public policy goals related to sustainable development.
+        </p>
+
+      </div>
+      <br>
+
+      <!-- Speaker section -->
+      <h3 class="speaker-title">SPEAKERS</h3>
+      <div class="speaker-detail">
+        <div class="speaker-detail__img">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/David_Crowther2.jpg/220px-David_Crowther2.jpg"
+            alt="profile image" class="image">
+          <p class="speaker-detail__name"><a class="speaker-detail__link" href="#">David Crowther</a><br>
+            Prof. President, SSRNet
+          </p>
+        </div>
+        <div class="speaker-detail__img">
+          <img
+            src="https://media.licdn.com/dms/image/C4D03AQFjXbXrtad6Og/profile-displayphoto-shrink_400_400/0/1516854223258?e=1677110400&v=beta&t=pf8UmUfOpKRLEi5wJZnN63vCk8h7rba0DXdMlWVlPYE"
+            alt="profile image" class="image">
+          <p class="speaker-detail__name"><a class="speaker-detail__link" href="#">Martin Samy</a><br>
+            Prof. Universite des Mascareignes
+          </p>
+        </div>
+        <div class="speaker-detail__img">
+          <img src="https://sustainabilitysummit.afrasiabank.com/wp-content/uploads/2019/09/robin.jpg"
+            alt="profile image" class="image">
+          <p class="speaker-detail__name"><a class="speaker-detail__link" href="#">Robin Nunkoo</a><br>
+            Dr. University of Mauritius
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <div class="footer">
-    <h2>Footer</h2>
+  <div class="footer-main">
+    <footer>
+      <div class="footer-icon">
+        <a class="footer-icon__link" href="#"><i class="ion-social-instagram"></i>
+        </a>
+        <a class="footer-icon__link" href="#"><i class="ion-social-twitter"></i>
+        </a>
+        <a class="footer-icon__link" href="#"><i class="ion-social-facebook"></i>
+        </a>
+      </div>
+      <p class="footer-text">Copyright © 2023 – All rights reserved.</p>
+    </footer>
   </div>
-</body>
 
+  <!-- Javascript code for the navigation bar to stick at the top -->
+  <script>
+    window.onscroll = function () { navBarFixed() };
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function navBarFixed() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+  <!-- Javascript code for the nav bar collaspe for mobile format -->
+  <script>
+    function openNav() {
+      var x = document.getElementById("navbar");
+      if (x.className === "main-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "main-nav";
+      }
+    }
+  </script>
+
+</body>
 </html>

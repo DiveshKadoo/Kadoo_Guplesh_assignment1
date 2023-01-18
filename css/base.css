@@ -1,0 +1,31 @@
+:root {
+    --colour-primary: rgb(84, 198, 211);
+    --colour-primary-light: rgb(0, 183, 199);
+    --colour-primary-dark-1: rgb(0, 171, 189);
+    --colour-primary-dark-2: rgb(0, 88, 138);
+    --colour-footer: rgb(0, 125, 190);
+    --colour-grey-dark: rgb(35, 31, 32);
+    --colour-grey-light-1: rgb(167, 169, 172);
+    --colour-grey-light-2: rgb(99, 100, 102);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 85%;
+    font-family: 'Optima', 'Century Gothic';
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+}
+
+body {
+    line-height: 1.6;
+    min-height: 100vh;
+}

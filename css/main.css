@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Header top section styling */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-item__left {
+  padding: 10px;
+  flex: 30%;
+}
+
+.header-item__middle {
+  padding: 10px;
+  flex: 40%;
+}
+
+.header-item__right {
+  padding: 10px;
+  flex: 30%;
+}
+
+.header-item__content {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Responsive layout - makes a one column-layout instead of a three-column layout */
+@media (max-width: 700px) {
+  .header-item__left,
+  .header-item__middle,
+  .header-item__right {
+    flex: 100%;
+  }
+}
