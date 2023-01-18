@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Icon used in page link -->
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contactus.css">
+
+    <title>Contact Us</title>
+
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+
+        <div class="header-item__left">
+            <a href="#"><img class="" src="img/logo-icacie.png" alt="ICACIE"></a>
+        </div>
+
+        <div class="header-item__middle">
+            <div class="header-item__content">
+                <h4 class=""><b>21<sup>th</sup> INTERNATIONAL CONFERENCE ON<br>AND 11th ORGANISATIONAL GOVERNANCE
+                        CONFERENCE (OGC)
+                        Social Responsibility in a Changing Era<br>[ICACIE 2023]</b></h4>
+                <h5><b>July/August, 2023</b></h5>
+            </div>
+        </div>
+
+        <div class="header-item__right">
+            <a href="https://udm.ac.mu"><img class="" src="img/udm-logo-2.png" alt="UdM Logo"></a>
+        </div>
+
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="main-nav" id="navbar">
+        <a href="index.html" class="nav__link">HOME</a>
+        <a href="callforpapers.html" class="nav__link">CALL FOR PAPERS</a>
+        <a href="register.html" class="nav__link">REGISTRATION</a>
+        <a href="gallery.html" class="nav__link">GALLERY</a>
+        <a href="committee.html" class="nav__link">COMMITTEE</a>
+        <a href="speaker.html" class="nav__link">SPEAKERS</a>
+        <a href="venue.html" class="nav__link">VENUE</a>
+        <a href="contactus.html" class="nav__link">CONTACT</a>
+        <a href="signin.html" class="nav__link">SIGN IN</a>
+        <a href="javascript:void(0);" class="nav__icon" onclick="openNav()">
+            <i class="fa fa-navicon"></i>
+        </a>
+    </div>
+
+    <!-- The contact us section (content) -->
+    <div class="container">
+        <div class="contact">
+            <div class="contact__left-side">
+                <div class="contact-details">
+                    <i class="fa fa-map-marker"></i>
+                    <div class="contact__topic">Address</div>
+                    <div class="contact__text-one">Université des Mascareignes, Mauritius</div>
+                </div>
+                <div class="contact-details">
+                    <i class="fa fa-phone"></i>
+                    <div class="contact__topic">Phone</div>
+                    <div class="contact__text-one">+230 XXXX XXXX</div>
+                    <div class="contact__text-two">+230 XXXX XXXX</div>
+                </div>
+                <div class="contact-details">
+                    <i class="fa fa-envelope"></i>
+                    <div class="contact__topic">Email</div>
+                    <div class="contact__text-one">ICACIE@gmail.com</div>
+                    <div class="contact__text-two">test@gmail.com</div>
+                </div>
+            </div>
+            <div class="contact__right-side">
+                <div class="contact__topic-text">Send us a message</div>
+                <p>For general enquiries, you can send us message from here. It's our pleasure to help you.</p>
+                <form action="#">
+                    <div class="contact__input-box">
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="contact__input-box">
+                        <input type="text" placeholder="Enter your email">
+                    </div>
+                    <div class="contact__input-box">
+                        <input type="text" placeholder="Enter your Designation/Affiliation">
+                    </div>
+                    <div class="contact__input-box">
+                        <input type="text" placeholder="Enter your Company Name">
+                    </div>
+                    <div class="contact__input-box">
+                        <input type="text" placeholder="Enter your mobile number">
+                    </div>
+                    <div class="contact__input-box message-box">
+                        <textarea class="textarea-box" placeholder="Enter text here"></textarea>
+                    </div>
+                    <div class="contact__button">
+                        <input type="button" value="Send Now">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-main">
+        <footer>
+            <div class="footer-icon">
+                <a class="footer-icon__link" href="#"><i class="ion-social-instagram"></i>
+                </a>
+                <a class="footer-icon__link" href="#"><i class="ion-social-twitter"></i>
+                </a>
+                <a class="footer-icon__link" href="#"><i class="ion-social-facebook"></i>
+                </a>
+            </div>
+            <p class="footer-text">Copyright © 2023 – All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Javascript code for the navigation bar to stick at the top -->
+    <script>
+        window.onscroll = function () { navBarFixed() };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function navBarFixed() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <!-- Javascript code for the nav bar collaspe for mobile format -->
+    <script>
+        function openNav() {
+            var x = document.getElementById("navbar");
+            if (x.className === "main-nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "main-nav";
+            }
+        }
+    </script>
+
+</body>
+</html>
