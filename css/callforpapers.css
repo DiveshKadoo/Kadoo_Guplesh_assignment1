@@ -52,12 +52,12 @@
 }
 
 .flex-item-left {
-    padding: 90px 190px 0px 190px;
+    padding: 90px 170px 0px 170px;
     flex: 70%;
 }
 
 .flex-item-right {
-    padding: 90px 30px 30px 30px;
+    padding: 90px 40px 30px 40px;
     flex: 30%;
 }
 
