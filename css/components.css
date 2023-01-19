@@ -57,16 +57,6 @@
   font-size: 16px;
 }
 
-.sponsor {
-  margin-top: 50px;
-}
-
-.sponsor-title {
-  border-left: 2px solid var(--colour-primary-dark-2);
-  padding-left: 12px;
-  margin-bottom: 5px;
-}
-
 /* news box styling on the left side */
 .newsbox {
   margin-top: 45px;
@@ -84,6 +74,16 @@
 }
 
 /* Sponsor section styling */
+.sponsor {
+  margin-top: 50px;
+}
+
+.sponsor-title {
+  border-left: 2px solid var(--colour-primary-dark-2);
+  padding-left: 12px;
+  margin-bottom: 5px;
+}
+
 .sponsor-img1 {
   background-image: url("https://www.lemauricien.com/wp-content/uploads/2016/08/star9juin.jpg");
   background-position: center;
@@ -92,6 +92,7 @@
   width: 100%;
   padding: 55px;
   height: 60px;
+  display: flex;
 }
 
 .sponsor-img2 {
@@ -102,6 +103,8 @@
   width: 100%;
   padding: 55px;
   height: 60px;
+  display: flex;
+
 }
 
 .sponsor-img3 {
@@ -113,6 +116,8 @@
   padding: 55px;
   height: 60px;
   background-color: white;
+  display: flex;
+
 }
 
 
@@ -293,6 +298,6 @@
     font-size: 24px;
   }
   .sponsor-img1 , .sponsor-img2, .sponsor-img3{
-    padding: 100px;
+    padding: 50px;
   }
 }
